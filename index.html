@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tugas CSS - Niomic</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <style>
+      body{
+        background-color: #333333;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      label{
+        color: #fff;
+      }
+      a{
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-md-center row-cols-auto mt-5 mb-4">
+        <div class="col">
+            <img src="img/lampung.jpg" class="rounded-circle" alt="jakarta" width="300" height="200">
+        </div>
+      </div>
+      <div class="row justify-content-md-center row-cols-2 mb-5">
+        <div class="col">
+          <form>
+            <div class="mb-3 fw-bold">
+              <label for="nama" class="form-label">Nama Lengkap</label>
+              <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap">
+            </div>
+            <div class="mb-3 fw-bold">
+              <label for="alamat" class="form-label">Alamat</label>
+              <textarea name="alamat" id="alamat" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+            <div class="mb-3 fw-bold">
+              <label for="email" class="form-label">Alamat Email</label>
+              <input type="email" class="form-control disabled" id="email" placeholder="Alamat Email (disabeld)">
+            </div>
+            <div class="mb-3 fw-bold">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Kata Sandi">
+            </div>
+            <div class="mb-3 fw-bold">
+              <label for="ktp" class="form-label">Scan KTP</label>
+              <input type="file" class="form-control" id="ktp">
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Saya <u>setuju</u> dan telah membaca <a href="">aturan</a> serta <a href="">ketentuan</a> yang berlaku
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-info col-md-12">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
